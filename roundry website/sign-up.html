@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Create Account</title>
+</head>
+<body>
+    <form class="form" onsubmit="handleSignup(event)">
+        <p id="heading">Create Account</p>
+        <div class="field">
+            <input id="signup-username" autocomplete="off" placeholder="Username" class="input-field" type="text" required>
+        </div>
+        <div class="field">
+            <input id="signup-email" autocomplete="off" placeholder="Email" class="input-field" type="email" required>
+        </div>
+        <div class="field">
+            <input id="signup-password" placeholder="Password" class="input-field" type="password" required>
+        </div>
+        <div class="field">
+            <input id="signup-confirm-password" placeholder="Confirm Password" class="input-field" type="password" required>
+        </div>
+        <div class="btn">
+            <button type="submit" class="button1">Sign Up</button>
+          
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

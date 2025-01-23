@@ -1,0 +1,251 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #0078d4;
+}
+body.dark-mode {background-color: #2c3e50; /* Dark background */
+    color: white; /* Light text */ }
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Helvetica, Verdana, sans-serif;
+}
+
+/* Header */
+.main-header {
+    background: transparent;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ffdd57;
+}
+
+/* Hero Section */
+.hero {
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+
+.hero p {
+    font-size: bolder;
+    margin-bottom: 2rem;
+}
+
+/* From Uiverse.io by Cornerstone-04 */ 
+.box {
+    width: 140px;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+    color:white;
+  }
+  
+  .box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  .box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .box:hover:before {
+    border-color: #ffffff;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .box:hover:after {
+    border-color: #ffffff;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+  
+  button {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+
+/* Info Sections */
+.info-section {
+    padding: 2rem 0;
+    background: #fff;
+    margin-bottom: 1rem;
+}
+
+.info-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #0078d4;
+}
+
+.info-section p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.info-section ol {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 2rem;
+}
+
+.info-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* Talent Section */
+.talent-section {
+    padding: 2rem 0;
+    background: #0078d4;
+}
+
+.talent-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0078d4;
+}
+
+.talent-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.talent-card {
+    background: #ffffff;
+    border: 2px solid #0078d4;
+    border-radius: 15px;
+    padding: 3rem;
+    text-align: center;
+    transition: box-shadow 0.3s;
+    margin-inline: 60px;
+}
+
+.talent-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.talent-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.talent-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #0078d4;
+}
+
+.talent-card button {
+    background: #0078d4;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.talent-card button:hover {
+    background: #000000;
+}
+/* Footer */
+.main-footer {
+    color: #fff;
+    text-align: center;
+    margin-top: 150.10px;
+   
+}
+
+.main-footer p {
+    margin-bottom: 0.5rem;
+}
+
+.main-footer .social-icons a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: color 0.3s;
+}
+
+.main-footer .social-icons a:hover {
+    color: #ffc107;
+}
+/* From Uiverse.io by marcelodolza */ 
+/* From Uiverse.io by Praashoo7 */ 

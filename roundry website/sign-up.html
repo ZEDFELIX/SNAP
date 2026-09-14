@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Create Account</title>
+    <title>Create Account — SnapNet</title>
+    <meta name="description" content="Create a SnapNet account to start hiring or find work.">
+    <meta property="og:title" content="Create Account — SnapNet">
+    <meta property="og:description" content="Create a SnapNet account to start hiring or find work.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
 <body>
-    <form class="form" onsubmit="handleSignup(event)">
-        <p id="heading">Create Account</p>
-        <div class="field">
-            <input id="signup-username" autocomplete="off" placeholder="Username" class="input-field" type="text" required>
-        </div>
-        <div class="field">
-            <input id="signup-email" autocomplete="off" placeholder="Email" class="input-field" type="email" required>
-        </div>
-        <div class="field">
-            <input id="signup-password" placeholder="Password" class="input-field" type="password" required>
-        </div>
-        <div class="field">
-            <input id="signup-confirm-password" placeholder="Confirm Password" class="input-field" type="password" required>
-        </div>
-        <div class="btn">
-            <button type="submit" class="button1">Sign Up</button>
-          
-        </div>
-    </form>
+    <a href="#signup-form" class="skip-link">Skip to main content</a>
+    <main id="signup-form" class="container">
+        <form class="form" onsubmit="handleSignup(event)">
+            <p id="heading">Create Account</p>
+            <div class="field">
+                <label for="signup-username">Username</label>
+                <input id="signup-username" autocomplete="off" placeholder="Username" class="input-field" type="text" required>
+            </div>
+            <div class="field">
+                <label for="signup-email">Email</label>
+                <input id="signup-email" autocomplete="off" placeholder="Email" class="input-field" type="email" required>
+            </div>
+            <div class="field">
+                <label for="signup-password">Password</label>
+                <input id="signup-password" placeholder="Password" class="input-field" type="password" required>
+            </div>
+            <div class="field">
+                <label for="signup-confirm-password">Confirm Password</label>
+                <input id="signup-confirm-password" placeholder="Confirm Password" class="input-field" type="password" required>
+            </div>
+            <div class="btn">
+                <button type="submit" class="button1">Sign Up</button>
+            </div>
+        </form>
+    </main>
 
     <script src="script.js"></script>
 </body>

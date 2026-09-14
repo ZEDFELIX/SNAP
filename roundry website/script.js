@@ -16,3 +16,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+function handleSignup(event) {
+    event.preventDefault();
+
+    const username = document.getElementById('signup-username');
+    const email = document.getElementById('signup-email');
+    const password = document.getElementById('signup-password');
+    const confirmPassword = document.getElementById('signup-confirm-password');
+
+    if (!username || !email || !password || !confirmPassword) {
+        return;
+    }
+
+    if (password.value !== confirmPassword.value) {
+        alert('Passwords do not match.');
+        return;
+    }
+
+    event.target.reset();
+    alert('Account created! Check your email to verify.');
+}

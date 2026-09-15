@@ -13,28 +13,50 @@
 </head>
 <body>
     <a href="#signup-form" class="skip-link">Skip to main content</a>
-    <main id="signup-form" class="container">
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">SNAP<span>NET</span></a>
+            <nav class="nav-menu" aria-label="Main navigation">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="hire-me.html">Hire Talent</a>
+                <a href="index.html#contact">Contact Us</a>
+                <a href="sign-up.html" class="nav-cta" aria-current="page">Sign Up</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="signup-form" class="form-page">
         <form class="form" onsubmit="handleSignup(event)">
             <p id="heading">Create Account</p>
+            <p class="subtitle">Join SnapNet and start connecting with local talent.</p>
             <div class="field">
                 <label for="signup-username">Username</label>
-                <input id="signup-username" autocomplete="off" placeholder="Username" class="input-field" type="text" required>
+                <input id="signup-username" autocomplete="off" placeholder="Choose a username" class="input-field" type="text" required>
             </div>
             <div class="field">
                 <label for="signup-email">Email</label>
-                <input id="signup-email" autocomplete="off" placeholder="Email" class="input-field" type="email" required>
+                <input id="signup-email" autocomplete="off" placeholder="you@example.com" class="input-field" type="email" required>
             </div>
             <div class="field">
                 <label for="signup-password">Password</label>
-                <input id="signup-password" placeholder="Password" class="input-field" type="password" required>
+                <input id="signup-password" placeholder="Create a password" class="input-field" type="password" required>
             </div>
             <div class="field">
                 <label for="signup-confirm-password">Confirm Password</label>
-                <input id="signup-confirm-password" placeholder="Confirm Password" class="input-field" type="password" required>
+                <input id="signup-confirm-password" placeholder="Confirm your password" class="input-field" type="password" required>
             </div>
             <div class="btn">
                 <button type="submit" class="button1">Sign Up</button>
             </div>
+            <p class="form-footer">Already have an account? <a href="#">Sign in</a></p>
         </form>
     </main>
 

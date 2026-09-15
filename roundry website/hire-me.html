@@ -13,54 +13,87 @@
 </head>
 <body>
     <a href="#hire-talent" class="skip-link">Skip to main content</a>
-    <main id="hire-talent" class="talent-section">
+
+    <header class="main-header">
         <div class="container">
-            <h2>Hire Talent</h2>
-            <div class="talent-grid">
-                <div class="talent-card">
-                    <img src="images/5.jpeg" alt="Profile photo of John Doe">
-                    <h3>John Doe</h3>
-                    <p>kiambu kaspat</p>
-                    <button>View Profile</button>
-                </div>
-                <div class="talent-card">
-                    <img src="images/5.jpeg" alt="Profile photo of Ian Kamau">
-                    <h3>Ian Kamau</h3>
-                    <p>embakasi fetha</p>
-                    <button>View Profile</button>
-                </div>
-                <div class="talent-card">
-                    <img src="images/5.jpeg" alt="Profile photo of Joseph Mutonga">
-                    <h3>Joseph Mutonga</h3>
-                    <p>kahawa wendani</p>
-                    <button>View Profile</button>
-                </div>
+            <a href="index.html" class="logo">SNAP<span>NET</span></a>
+            <nav class="nav-menu" aria-label="Main navigation">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="hire-me.html" aria-current="page">Hire Talent</a>
+                <a href="index.html#contact">Contact Us</a>
+                <a href="sign-up.html" class="nav-cta">Sign Up</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="hire-talent">
+        <div class="page-header">
+            <div class="container">
+                <h1>Hire Talent</h1>
+                <p>Browse verified professionals ready to work in your area.</p>
             </div>
         </div>
-        <div class="container">
-            <h2>Hire Talent</h2>
-            <div class="talent-grid">
-                <div class="talent-card">
-                    <img src="images/5.jpeg" alt="Profile photo of John Doe">
-                    <h3>John Doe</h3>
-                    <p>kiambu kaspat</p>
-                    <button>View Profile</button>
-                </div>
-                <div class="talent-card">
-                    <img src="images/5.jpeg" alt="Profile photo of Jane Smith">
-                    <h3>Jane Smith</h3>
-                    <p>embakasi fetha</p>
-                    <button>View Profile</button>
-                </div>
-                <div class="talent-card">
-                    <img src="images/5.jpeg" alt="Profile photo of Brian Waweru">
-                    <h3>Brian Waweru</h3>
-                    <p>kahawa wendani</p>
-                    <button>View Profile</button>
+
+        <section class="talent-section">
+            <div class="container">
+                <h2>Available Professionals</h2>
+                <div class="talent-grid">
+                    <div class="talent-card">
+                        <img src="images/5.jpeg" alt="Profile photo of John Doe">
+                        <h3>John Doe</h3>
+                        <p class="location">Kiambu, Kaspat</p>
+                        <button>View Profile</button>
+                    </div>
+                    <div class="talent-card">
+                        <img src="images/5.jpeg" alt="Profile photo of Ian Kamau">
+                        <h3>Ian Kamau</h3>
+                        <p class="location">Embakasi, Fetha</p>
+                        <button>View Profile</button>
+                    </div>
+                    <div class="talent-card">
+                        <img src="images/5.jpeg" alt="Profile photo of Joseph Mutonga">
+                        <h3>Joseph Mutonga</h3>
+                        <p class="location">Kahawa, Wendani</p>
+                        <button>View Profile</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="talent-section" style="background: var(--color-surface);">
+            <div class="container">
+                <h2>More Professionals</h2>
+                <div class="talent-grid">
+                    <div class="talent-card">
+                        <img src="images/5.jpeg" alt="Profile photo of John Doe">
+                        <h3>John Doe</h3>
+                        <p class="location">Kiambu, Kaspat</p>
+                        <button>View Profile</button>
+                    </div>
+                    <div class="talent-card">
+                        <img src="images/5.jpeg" alt="Profile photo of Jane Smith">
+                        <h3>Jane Smith</h3>
+                        <p class="location">Embakasi, Fetha</p>
+                        <button>View Profile</button>
+                    </div>
+                    <div class="talent-card">
+                        <img src="images/5.jpeg" alt="Profile photo of Brian Waweru">
+                        <h3>Brian Waweru</h3>
+                        <p class="location">Kahawa, Wendani</p>
+                        <button>View Profile</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
